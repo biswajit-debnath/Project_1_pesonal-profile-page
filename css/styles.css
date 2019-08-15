@@ -10,7 +10,7 @@ body {
 }
 h1 {
     margin-top: 10px;
-    font-size: 2.4em;
+    font-size: 2em;
 }
 h2 {
     margin: 0;            
@@ -25,7 +25,9 @@ h2 {
 .header-content,
 .main-container,
 .footer-container,
-.contact {
+.contact,
+.skills,
+.skill-section {
     margin: 0 auto;
     width: 90%;
     text-align: center;
@@ -41,13 +43,19 @@ h2 {
 /* Header section */
  .header-content li {
     font-weight: bold;
-    font-size: 1.3rem;
-    color:  rgba(48, 48, 48, 0.74);
+    font-size: 1.1rem;
     text-transform: uppercase;
     list-style-type: none;
     background-color: white;
     margin-bottom: 6px;
     padding:0.8em 0;
+ }
+ .header-content a {
+    color:  rgba(48, 48, 48, 0.74);
+    text-decoration: none;
+ }
+ .header-content a:hover {
+     color:green;
  }
  .header-content ul {
     padding-left: 0;
@@ -74,6 +82,7 @@ h2 {
  }
  .main-container {
     padding-top: 3em;    
+    border-bottom: 2px solid rgba(230, 230, 230, 0.795);
 }
  .main-container h2 {
      margin-bottom: 1.2em;
@@ -86,13 +95,34 @@ h2 {
     color: rgba(92, 92, 92, 0.74);
     font-size: 1.2em;
  }
-
+/*Skill section*/
+.skill-section {
+    margin-top: 2.5em;
+}
+.skills div {
+    width: 49%;
+    padding:10px;
+    float: left;
+    font-weight: 400;
+    color: rgb(66, 151, 66);
+}
+.skills li {
+    text-align: left;
+}
+.skills ul {
+    list-style:inside;
+    padding-left: 0;
+    line-height: 1.8em;
+    font-size: 1.2em;
+}
+.skills {
+    padding-left: 3em;
+}
 /* Contact section */
 .contact {
     font-size: 1.2rem;
     padding-top: 3.5em;
     padding-bottom: 3em;
-    border-bottom: 2px solid rgba(230, 230, 230, 0.795);
 }
 .contact-para {
     margin-top: 1.7em;
@@ -108,6 +138,9 @@ h2 {
 }
 
 /* Footer section */
+.footer-container {
+    border-top: 2px solid rgba(230, 230, 230, 0.795);
+}
 .Name {
     float: left;
 }
@@ -116,6 +149,13 @@ h2 {
 }
 .back-t-top {
     float: right;
+}
+.back-t-top a {
+    color:  rgba(48, 48, 48, 0.74);
+    text-decoration: none;
+}
+.back-t-top a:hover {
+    color:green;
 }
 .clearfix::after {
     content: "";
@@ -169,6 +209,11 @@ h2 {
     .photo {
         margin-right: 1em;
     }
+    /*Skill section*/
+    .skills div {
+        width: 24%;
+    }
+    
     /*Footer section*/
     .back-t-top {
         display: none;
@@ -181,9 +226,17 @@ h2 {
         list-style-type: none;
         float: left;
         margin-left:1.7em;
+        font-family: 'Nunito', sans-serif;
         font-size:22.4px;
         font-weight: bold;
+       
+    }
+    .big-screen a {
         color:  rgba(48, 48, 48, 0.74);
+        text-decoration: none;
+    }
+    .big-screen a:hover {
+        color:green;
     }
     .Name {
         margin-top: 16px;
@@ -193,4 +246,49 @@ h2 {
         padding-bottom: 3.5em;
     }
     
+}
+@media (min-width: 1024px)  {
+    body {
+        margin-top: 20px;
+    }
+    /*Header section*/
+    .header-content h1 {
+        float: left;
+    }
+    .header-content ul {
+        float: right;
+    }
+    .header-content img {
+        width:40%;
+        margin-left: 10px;
+    }
+    .header-content p {
+        width:58%;
+    }
+    .header-content li {
+        margin-right: 0;
+        margin-left: 2.2em;
+    }
+    /*main section*/
+    .main-container div {
+        width: 32%;
+    }
+    .marketing,
+    .search,
+    .map,
+    .photo {
+        margin-right: 1em;
+    }
+    .travel {
+        margin-right: 0;
+    }
+    /*Contact section*/
+    .contact {
+        width:60%;
+    }
+   /*Footer section*/
+   .footer-container {
+       padding-bottom: 1em;
+   }
+
 }
