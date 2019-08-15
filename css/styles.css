@@ -209,6 +209,9 @@ h2 {
     .photo {
         margin-right: 1em;
     }
+    .main-container p {
+        height: 72px;
+    }
     /*Skill section*/
     .skills div {
         width: 24%;
