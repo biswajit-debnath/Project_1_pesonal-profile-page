@@ -203,6 +203,8 @@ h2 {
     .main-container div {
         width: 48%;
         float: left;
+        transition-property: transform;
+        transition-duration: 0.5s;
     }
     .marketing,
     .travel,
@@ -211,6 +213,9 @@ h2 {
     }
     .main-container p {
         height: 72px;
+    }
+    .main-container div:hover {
+        transform: scale(1.089);
     }
     /*Skill section*/
     .skills div {
