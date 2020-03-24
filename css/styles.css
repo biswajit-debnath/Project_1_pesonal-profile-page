@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+      scroll-behavior: smooth !important;
+    }
 /* Setting up backgound and width */
 body {
     background-color: rgba(250, 250, 250, 0.795);
